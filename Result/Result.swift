@@ -53,7 +53,7 @@ extension Result {
 
 }
 
-// MARK:- Monads
+// MARK:- Monadic Transforms
 
 extension Result {
 
