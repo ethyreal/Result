@@ -85,4 +85,17 @@ extension Result {
 }
 
 
+extension Result: CustomDebugStringConvertible {
+    
+    var debugDescription: String {
+        switch self {
+        case let .success(value):
+            return "Result.success( \(value) )"
+        case let .failure(error):
+            return "Result.failure( \(error) )"
+        }
+    }
+}
+
+
 
